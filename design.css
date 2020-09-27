@@ -1,0 +1,32 @@
+.container .box{
+  display: inline-block;
+  width: 30%;
+  height: 75px;
+  background-color: #02c9bf;
+  text-align: center;
+  color: white;
+  float: left;
+  margin-left: 10px;
+}
+.container{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.box:hover{
+    background-color: #005a7d;
+    transform: scale(1.1);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body{
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+}
